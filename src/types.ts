@@ -1,13 +1,60 @@
+// export interface ServiceItem {
+//   // id: string;
+//   // icon: string;
+//   // title: string;
+//   // description: string;
+//   // actionText: string;
+
+
+//   id: string;
+//   icon: string;
+//   title: string;
+//   description: string;
+//   actionText: string;
+
+//   image: string;
+//   detailedDescription: string;
+//   benefits: string[];
+//   areas?: string[];
+
+// }
+
+
+
 export interface ServiceItem {
   id: string;
   icon: string;
   title: string;
   description: string;
   actionText: string;
+  image: string;
+  detailedDescription: string;
+  benefits: string[];
+  areas?: string[];
+  bgColor?: string;
 }
+
+
+
+
+
+
+
+
+
+// export interface ProjectItem {
+//   id: string;
+//   tag: string;
+//   location: string;
+//   title: string;
+//   description: string;
+//   imageUrl: string;
+// }
+
 
 export interface ProjectItem {
   id: string;
+  category: 'Commercial' | 'Bungalow' | 'Flats';
   tag: string;
   location: string;
   title: string;
